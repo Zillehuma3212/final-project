@@ -193,7 +193,6 @@ button:hover {
         box-shadow 0.3s ease-in-out, 
         background-color 0.3s ease,
         opacity 0.4s ease, 
-        filter 0.4s ease, 
         transform 0.4s ease-in-out;
     width: 18rem;
     height: 25rem;
@@ -206,7 +205,7 @@ button:hover {
     opacity: 0.9;
     transform: translateY(-10px) scale(1) rotate(2deg); 
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3); /* More prominent shadow */
-    filter: brightness(1.1) contrast(1.2); /* Adjust brightness and contrast */
+  
 }
 
 
