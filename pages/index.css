@@ -100,6 +100,7 @@ header{
     border-radius: 50px;
     font-weight: 500;
     font-size: 15px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 
 }
 .button2{
@@ -110,29 +111,44 @@ header{
     border-radius: 50px;
     font-weight: 500;
     font-size: 15px;
+  
 }
 .button1:hover{
     background-color:#520505;
     color: wheat;
+    
 
 }
 .button2:hover{
     background-color: #520505;
     color: wheat;
+   
 
 }
 .button1:active{
     background-color:#748A8B;
     color: black;
+    
 
 }
 .button2:active{
     background-color:#748A8B;
     color: black;
+   
 
 }
 
-/* ------- responsive header----- */
+footer{
+    margin-top: 30px;
+    box-shadow: 0 8px 20px #520505 ;
+}
+.footer-opt{
+    padding: 30px;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: flex-start;
+}
+/* ------- responsive header for tab----- */
 
 @media only screen and (max-width:1024px){
     
@@ -195,9 +211,24 @@ header{
     }
     .nav .account div:first-child{
         width: 100px;
-        min-width: 100px;
+       
     }
+    .banner-text h1{
+        font-size: 30px;
+    }
+    .banner-text p{
+        font-size: 20px;
+        font-weight: 20px;
+    }
+    /* .banner-item2:last-child{
+        padding: 30px 0;
+    }
+    */
+    
+    
 }
+
+    /* -----------responsive phone ---------- */
 
 @media only screen and (max-width:800px){
     header{
@@ -232,11 +263,88 @@ header{
         color: wheat;
     }
 
-
-
-
-
-
-
 }
 
+/* ----------- banner --------- */
+
+.banner .banner-item1{
+     margin-top: 80px;
+     display: flex;
+     align-items: center;
+     flex-direction: row-reverse;
+
+}
+.banner .banner-item1 img{
+    width: 80vw;
+    margin-right: 20px;
+    
+}
+.banner .banner-text{
+    text-align: center;
+    margin: 0 7%;
+}
+.banner-text h1 {
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+.banner-text p{
+    font-size: 24px;
+    margin-bottom: 50px;
+    font-weight: 50px;
+}
+.banner-btn{
+    background-color: #d78128;
+    color:black;
+    padding: 5px 15px;
+    border: 2px solid black;
+    border-radius: 50px;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.banner-btn:hover{
+    background-color: #520505;
+    color: white;
+}
+
+/* ------- banner 2-------- */
+
+.banner .banner-item2 img{
+    width: 100vw;
+    margin-left: 20px;
+    
+}
+.banner .banner-item2{
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+
+}
+.banner .banner-text{
+    text-align: center;
+    margin: 0 7%;
+}
+.banner-text h1 {
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+.banner-text p{
+    font-size: 24px;
+    margin-bottom: 50px;
+    font-weight: 50px;
+}
+.banner-btn{
+    background-color: #d78128;
+    color:black;
+    padding: 5px 15px;
+    border: 2px solid black;
+    border-radius: 50px;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.banner-btn:hover{
+    background-color: #520505;
+    color: white;
+}
