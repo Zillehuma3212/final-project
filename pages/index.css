@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Protest+Riot&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 *{
     box-sizing: border-box;
     margin: 0;
@@ -8,13 +9,19 @@ body{
     max-width: 1400;
     overflow-x:hidden ;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-image: url(/final-project/images/back.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center; 
+    
 }
+
 header{
     display: flex;
     align-items: center;
     background-color: #d78128;
     height: 130px;
-    padding: 0 40px;
+    padding: 0;
     position: relative;
     box-shadow: 0 8px 20px #520505;
     z-index: 100;
@@ -25,329 +32,443 @@ header{
 .logo-img{
     width: 130px;
     margin-top: 10px;
-    margin-left:-20px;
+    margin-left:40px;
+    
    
 }
-.nav{
+
+
+nav{
+    width: 50%;
+    height: 10vh;
+    
+}
+
+.nav-container{
     width: 100%;
-    display: flex;
-    justify-content:space-between;
-    align-items: center;
-
-}
-.nav ul ,
- 
- .nav .location,
- .nav .account{
-   display: flex;
-   align-items: center;
-   height: 100px;
-}
-.nav ul a {
     height: 100%;
-    color:black;
-    padding: 10px;
-}
-.nav ul a:hover{
-    color: white;
-    background-color:#520505;
-    border-radius: 4px;
-}
-.nav ul a:active{
-    color: #520505;
-}
-.nav ul li{
-    margin-left: 30px;
-    color: black;
-    font-weight: 700;
-    font-size: 16px;
     display: flex;
+    justify-content: space-evenly;
     align-items: center;
-    border:5px solid transparent;
-
+    margin-left: 750px;
 }
-/* .location .store:hover{
-    color: white;
-} */
-
-/* ----- find a store ---- */
-
-.nav div:nth-child(2){
+.nav-container .logo img{
+    width: 150px;
+    margin-top: 10px;
+}
+.nav-container .links{
     display: flex;
-    align-items: center;
-    height: 100px;
-   
-
 }
-.nav .location img{
-    padding-top: 5px;
-
-}
-.nav div:nth-child(2) div{
+.links .link{
+    position: relative;
     margin: 0 10px;
+    cursor: pointer;
+}
+
+
+.links .link::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: scale(0);
+    border-radius: 5px;
+    border: 2px solid transparent;
+    background-color: transparent;
+    transition: transform 0.3s ease, border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.links .link:hover::before {
+    transform: scale(1.2);
+    border-color: black;
+    background-color: rgba(0, 0, 0, 0.1); 
+}
+.links .link a{
+    color: black;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 10px;
+    
 
 }
-/* .nav-option a{
-   color: black;
-} */
 
-.nav .store{
-    color: black;
-    font-weight: 500;
-    margin-right: 30px;
+
+/* ------------------ */
+
+
+
+
+.header-buttons {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    font-size: 1.2rem; 
+    justify-content: center;
+
+   
+    
+
 }
-.button1{
-    color: black;
-    padding: 5px 15px;
-    border: 2px solid black;
-    border-radius: 50px;
-    font-weight: 500;
-    font-size: 15px;
+
+.btn-links{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn-links a{
+    text-decoration: none;
+}
+.btn-specail {
+    background-color: black; 
+    color: white;
+    border: none; 
+    padding: 10px 20px; 
+    font-size: 16px;
+    border-radius: 5px; 
+    text-transform: uppercase;
     transition: background-color 0.3s ease, transform 0.2s ease;
-
+   
 }
-.button2{
-    background-color:black;
-    color:white;
-    padding: 5px 15px;
-    border: 2px solid black;
-    border-radius: 50px;
-    font-weight: 500;
-    font-size: 15px;
+.btn-links .btn {
+    background-color: black; 
+    color: white;
+    border: none; 
+    padding: 9px 15px; 
+    font-size: 16px;
+    border-radius: 5px; 
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    
+}
+.btn-specail:hover {
+    background-color: #520505; 
+    color: white;
+    transform: translateY(-2px);
+}
+.btn-links .btn:hover{
+    background-color: #520505;
+    color: white;
+    transform: translateY(-2px);
+}
+.btn-specail:focus, .btn-links .btn:focus {
+    outline: 3px solid #d78128;
+    outline-offset: 2px;
+}
+
+
+/* ----------------- */
+section{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+section .content{
+    width: 35%;
+    color: white;
+}
+.content h2{
+    color: #d78128;
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+.content h1{
+    font-size: 4.5rem;
+    font-family: "Protest Riot", sans-serif;
+    font-weight: 100;
+}
+.content h1 span{
+    font-size: 5rem;
+    color: #d78128;
+    font-family: "Protest Riot", sans-serif;
+    font-weight: 100;
+}
+.content hr{
+    width: 80%;
+    height: 4px;
+    border: none;
+    margin: 10px 0;
+    background:linear-gradient(to right, #d2911c, #520505) ;
+}
+.content p{
+   font-size: 1.2rem;
+   
+}
+.content .icons{
+    width: 70%;
+    height: 7vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px 0;
+    
+}
+.icons div{
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.icons div i{
+    color: #d78128;
+    margin-right:10px ;
+    font-size: 3rem;
+}
+section .image img{
+    width: 700px;
+    transform: translate(400px,400px);
+}
+
+
+/* service card */
+.container {
+    padding: 40px 0;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.col {
+    flex: 1 1 calc(25% - 16px);
+    max-width: calc(25% - 16px);
+    box-sizing: border-box;
+}
+
+/* Service Item Styles */
+.service-item {
+    border-radius: 8px;
+    padding-top: 12px;
+    animation: fade-in-slide-up 1s;
+}
+
+.service-content {
+    padding: 16px;
+    text-align: center;
+    color: black;
+}
+
+.service-content i {
+    color:  #520505;
+    margin-bottom: 16px;
+}
+.col{
+    background-color: #d78128;
+}
+.col:hover{
+    background-color: white;
+    color: black;
+}
+
+/* ---------- gallery----------- */
+.gallery{
+    margin: 50px;
+}
+
+.gallery h1{
+    font-size: 50px;
+    text-align: center;
+    padding-bottom: 3rem;
+    color: #d78128;
+    letter-spacing: 1px;
+}
+.main-gallery{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
   
 }
-.button1:hover{
-    background-color:#520505;
-    color: wheat;
+.inner-gallery{
+    flex: 1 1 300px;
     
-
 }
-.button2:hover{
-    background-color: #520505;
-    color: wheat;
-   
-
+.inner-gallery .gallery-image img{
+    width: 400px;
+    height: 500px;
+    border: 2px solid;
+  
 }
-.button1:active{
-    background-color:#748A8B;
+/* .inner-gallery .gallery-image:hover img{
+    transform: perspective(1000px) rotateX(-4.80deg) rotateY(-10.23deg) ;
+    clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+} */
+
+.inner-gallery .gallery-image:hover img {
+    transform: perspective(1000px) rotateX(-4.80deg) rotateY(-10.23deg) scale(1.1);
+    clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+    transition: transform 0.3s ease, clip-path 0.3s ease; 
+}
+
+
+
+/* Keyframe Animation */
+@keyframes fade-in-slide-up {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* ---------- footer ------- */
+
+/* 
+
+.footer .box-container{
+    display: grid;
+    grid-template-rows: repeat(auto-fit, minmax(23rem, 1fr));
+    gap:1.5rem;
+}
+
+.footer .box-container .box h3{
+    font-size: 2.5rem;
+    padding:1rem 0;
+    color: white;
+}
+
+.footer .box-container .box a{
+    display: block;
+    font-size: 1.5rem;
+    padding:1rem 0;
+    color:white;
+}
+
+.footer .box-container .box a i{
+    padding-right: .5rem;
+    color: white;
+}
+
+.footer .box-container .box a:hover i{
+    padding-right: 2rem;
+}
+
+.footer .credit{
+    text-align: center;
+    font-size: 2rem;
+    padding:2rem 1rem;
+    margin-top: 1rem;
+    color:white;
+}
+
+.footer .credit span{
+    color: white;
+} */
+
+
+
+
+.footer {
+    color: #fff;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #d78128;
     color: black;
-    
-
+    max-height: 15rem;
 }
-.button2:active{
-    background-color:#748A8B;
+
+/* Footer Container */
+.footer .box-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+/* Individual Boxes */
+.footer .box {
+    flex: 1;
+    margin: 0;
+    min-width: 250px;
+}
+
+/* Box Headings */
+.footer .box h3 {
+    font-size: 50px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    width: 500px;
+    padding-bottom: 15px;
+}
+
+/* Links Styling */
+.footer .box a {
+    display: block;
+    margin: 0;
     color: black;
-   
-
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
 }
 
-footer{
+/* Links Hover Effect */
+.footer .box a:hover {
+    color: white;
+}
+
+/* Icon Styling */
+.footer .box a i {
+    margin-right: 10px;
+}
+
+/* Credit Text */
+.footer .credit {
     margin-top: 30px;
-    box-shadow: 0 8px 20px #520505 ;
+    font-size: 20px;
+    color: black;
 }
-.footer-opt{
-    padding: 30px;
-    border-bottom: 1px solid black;
-    display: flex;
-    justify-content: flex-start;
-}
-/* ------- responsive header for tab----- */
 
-@media only screen and (max-width:1024px){
+.footer .credit span {
+    color: #520505;
+    font-weight: bold;
+    text-decoration: none;
+}
+.fab {
+    color: black; 
+    font-size: 30px;
     
-    .logo{
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-    #bar{
-        display: block;
-    }
+}
+.fab:hover {
+    color: white; 
+    font-size: 30px;
+    
+}
+.icons{
 
-    #bar,
-    #cross{
-        cursor:pointer;
-    }
-    .nav{
-        position: absolute;
-        top: 130px;
-        left: 20%;
-        width: 100%;
-        height: 100vh;
-        box-shadow: inset 0 8px 20px #52050579;
-        justify-content: left;
-        align-items: flex-start;
-        flex-direction: column;
-        transition: all 0.5s;
-    }
-    .nav div{
-        width: 100%;
-
-    }
-    .nav ul{
-        flex-direction: column;
-        height: auto;
-        justify-content: flex-start;
-        align-items: flex-start;
-        border-bottom: 1px solid black;
-        margin-left: 20px;
-        padding-bottom: 20px;
-        padding-top: 20px;
-
-    }
-    .nav ul li{
-        font-size: 18px;
-        padding: 6px;
-        border-bottom: none;
-    }
-    .nav .nav-option{
-        flex-direction: column-reverse;
-    }
-    .nav .location{
-        padding-left: 40px;
-        height: 10px;
-    }
-    .nav .account{
-        width: 100%;
-        padding-left: 30px;
-    }
-    .nav .account div:first-child{
-        width: 100px;
+        display: inline-block; 
+        margin-right: 10px; 
+        display: flex; 
+        gap: 10px; 
+       text-decoration: none;
+       text-align: center;
        
-    }
-    .banner-text h1{
-        font-size: 30px;
-    }
-    .banner-text p{
-        font-size: 20px;
-        font-weight: 20px;
-    }
-    /* .banner-item2:last-child{
-        padding: 30px 0;
-    }
-    */
-    
-    
 }
 
-    /* -----------responsive phone ---------- */
-
-@media only screen and (max-width:800px){
-    header{
-        height: 80px;
-        padding: 0 20px;
-    }
-    .nav{
-        top: 80px;
-        background-color:#faf2e9;
-    }
-    .nav ul a:hover{
-        color:#520505 ;
-    }
-    .logo-img{
-        width: 90px;
-        margin-left: 10px;
-    }
-    .nav .button1:hover{
-        background-color: #d78128;
-        color: black;
-    }
-    .nav .button2:hover{
-        background-color: #d78128;
-        color: black;
-    }
-    .nav .button1:active{
-        background-color: #520505;
-        color: wheat;
-    }
-    .nav .button2:active{
-        background-color: #520505;
-        color: wheat;
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .footer .box-container {
+        flex-direction: column;
+        align-items: center;
     }
 
+    .footer .box {
+        text-align: center;
+    }
 }
 
-/* ----------- banner --------- */
 
-.banner .banner-item1{
-     margin-top: 80px;
-     display: flex;
-     align-items: center;
-     flex-direction: row-reverse;
 
-}
-.banner .banner-item1 img{
-    width: 80vw;
-    margin-right: 20px;
-    
-}
-.banner .banner-text{
-    text-align: center;
-    margin: 0 7%;
-}
-.banner-text h1 {
-    font-size: 50px;
-    margin-bottom: 30px;
-}
-.banner-text p{
-    font-size: 24px;
-    margin-bottom: 50px;
-    font-weight: 50px;
-}
-.banner-btn{
-    background-color: #d78128;
-    color:black;
-    padding: 5px 15px;
-    border: 2px solid black;
-    border-radius: 50px;
-    font-weight: 500;
-    font-size: 15px;
-}
-
-.banner-btn:hover{
-    background-color: #520505;
-    color: white;
-}
-
-/* ------- banner 2-------- */
-
-.banner .banner-item2 img{
-    width: 100vw;
-    margin-left: 20px;
-    
-}
-.banner .banner-item2{
-    margin-top: 80px;
-    display: flex;
-    align-items: center;
-    flex-direction: row-reverse;
-
-}
-.banner .banner-text{
-    text-align: center;
-    margin: 0 7%;
-}
-.banner-text h1 {
-    font-size: 50px;
-    margin-bottom: 30px;
-}
-.banner-text p{
-    font-size: 24px;
-    margin-bottom: 50px;
-    font-weight: 50px;
-}
-.banner-btn{
-    background-color: #d78128;
-    color:black;
-    padding: 5px 15px;
-    border: 2px solid black;
-    border-radius: 50px;
-    font-weight: 500;
-    font-size: 15px;
-}
-
-.banner-btn:hover{
-    background-color: #520505;
-    color: white;
-}

@@ -4,7 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
-    <link rel="shortcut icon" href="../images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+
     <title>Bean Bliss</title>
 </head>
 <body>
@@ -19,127 +24,188 @@
                 <img class="logo-img" src="../images/logo.png" alt="logo of bean bliss coffee shop">
         </div>
         </div>
-        <!-- ------- icons------- -->
-
-        <!-- <div>
-            <img class="icon" id="bar" src="../images/bars.svg" alt=" bar icon">
-            <img  class="icon" id="cross" src="../images/cross.svg" alt="">
-        </div> -->
-         
-<!-- 
-        <div class="menu-wrap">
-            <input type="checkbox" class="toggler">
-            <div class="hamburger">
-                <div></div>
-            </div> -->
-
-        <!-- --------nav-------- -->
-
-        <div class="nav">
-            
-            <div>      <!-- ----1st child--- -->
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="about-us/about-us.html">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </div>
-             
-            <div class="nav-option">     <!-- -----2nd child---- -->
-
-                <!-- ------- location ------ -->
-
-                <div class="location">     <!-- ----1st child of "nav-option"--- -->
-                    <img class="icon" src="../images/location.svg" alt="">
-                    <div>
-                        <a class="store" href="#">Find a store</a>
-                    </div>
+      
+        <nav>
+            <div class="nav-container">
+                <div class="logo">
+                    <img src="../final-project/images/logo.png" alt="">
                 </div>
-                <!-- ------- sign in/ join now buttons ------ -->
-
-
-                <div class="account">   <!-- -----2nd child of "nav-option"---- -->
-                    <div>
-                        <a class="button2" href="#">Join Now</a>
-                        
-                    </div>
-                    <div>
-                        <a class="button1" href="#">Sign in</a>
-                    </div>
-
+                <div class="links">
+                    <div class="link" data-aos="fade-up" data-aos-duration="1200"><a href="#">Menu</a></div>
+                    <div class="link" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="100"><a href="#">Gallery</a></div>
+                    <div class="link" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200"> <a href="about-us.html">About Us</a></div>
+                    <div class="link" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200"><a href="#">Contact Us</a></div>
                 </div>
-
+                <div class="header-buttons">
+                    <div class="btn-links link" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200">
+                      <a class="btn-specail" href="#">Sign In</a>
+                    </div>
+                    <div class="btn-links link" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200">
+                      <a class="btn" href="#">Join Now</a>
+                    </div>
+                 
+                  </div>
             </div>
-           
-        </div>
+               <!-- buttons Section -->
+                
+               
+        </nav>
 
     </header>
-    <div class="banner">
-        <div class="banner-item1">
-            <img src="../images/brown-coffee-mug.jpg" alt="a cup of coffee with coffee beans">
-            <div class="banner-text">
-                <h1>Brewing Joy, One Cup at a Time.</h1>
-                <p>At Bean Bliss, we craft the perfect cup of coffee to brighten your day. Discover rich flavors, cozy vibes, and a passion for quality in every sip.</p>
-                <a href="#" class="banner-btn">Explore the menu</a>
+
+
+    <section>
+        <div class="content">
+            <h2 data-aos="fade-right" data-aos-duration="1200" data-aos-delay="400">Brewing Joy, One Cup at a Time</h2>
+            <h1 data-aos="zoom-out" data-aos-duration="1500" data-aos-delay="600">We began with a concept: Create amazing <span>coffee</span></h1>
+            <hr data-aos="zoom-in-right" data-aos-duration="1500" data-aos-delay="700">
+            <p data-aos="flip-down" data-aos-duration="1500" data-aos-delay="900">At Bean Bliss, we craft the perfect cup of coffee to brighten your day. Discover rich flavors, cozy vibes, and a passion for quality in every sip.</p>
+            <div class="icons">
+                <div class="coffee" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="1100"><i class="fa-solid fa-mug-hot"></i><span>Tasty coffee</span></div>
+                <div class="play" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="1100"><i class="fa-regular fa-circle-play"></i><span>Play Video</span></div>
             </div>
         </div>
+        <div class="image">
+            <img src="/final-project/images/Cup-Of-Coffee.png" data-aos="zoom-in-left" data-aos-duration="3000">
+        </div>
+    </section>
+   
+       <!-- ---------Service cards------- -->
 
-        <div class="banner-item2">
-           
-            <div class="banner-text">
-                <h1>Chill with Every Sip.</h1>
-                <p>Indulge in the ultimate refreshment with our creamy, ice-cold coffee. Perfectly brewed to keep you cool and energized all day long.</p>
-                <a href="#" class="banner-btn">Order now</a>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="service-item">
+                    <div class="service-content">
+                        <i class="fa fa-3x fa-user-tie"></i>
+                        <h5>Master Barista</h5>
+                        <p>Where every cup is brewed with skill, love, and the perfect blend of flavor crafted just for you.</p>
+                    </div>
+                </div>
             </div>
-             <img src="../images/pumpkin-spice.jpg" alt="a cup of coffee with coffee beans">
+            <div class="col">
+                <div class="service-item">
+                    <div class="service-content">
+                        <i class="fa fa-3x fa-utensils"></i>
+                        <h5>Quality Food</h5>
+                        <p>Serving you the finest quality food, made with fresh ingredients and a passion for flavor.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="service-item">
+                    <div class="service-content">
+                        <i class="fa fa-3x fa-cart-plus"></i>
+                        <h5>Online Order</h5>
+                        <p>Enjoy our delicious menu from the comfort of your home order online and have it delivered to your door!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="service-item">
+                    <div class="service-content">
+                        <i class="fa fa-3x fa-headset"></i>
+                        <h5>24/7 Service</h5>
+                        <p>Craving something tasty anytime? We're here for you 24/7, ready to serve your favorites whenever you need!</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    <!-- ----- footer section ---- -->
-    
-    <footer>
-        <div class="footer-otp">
-            <div>
-               <div class="footer-head">
-                 <h3>About us</h3>
-               </div>
-               <!-- ---- footer list---- -->
 
-               <div class="footer-list">
-                   <ul>
-                       <a href="#">
-                        <li>Our Company</li>
-                       </a>
-                       <a href="#">
-                        <li>Our Company</li>
-                       </a>
-                       <a href="#">
-                        <li>Our Company</li>
-                       </a>
-                       
-                   </ul>
-               </div>
+    <div class="gallery">
+
+        <h1>Gallery</h1>
+
+        <div class="main-gallery">
+            <div class="inner-gallery">
+                <div class="gallery-image">
+                    <img src="/final-project/images/ice-coffee-.jpg" alt="">
+                </div>
             </div>
-            <div>
-                <div class="footer-head">
-                  <h3>About us</h3>
+
+            <div class="inner-gallery">
+                <div class="gallery-image">
+                    <img src="/final-project/images/macarons.jpg" alt="">
                 </div>
-                <div class="footer-list">
-                    <ul>
-                        <a href="#">
-                         <li>Our Company</li>
-                        </a>
-                        <a href="#">
-                         <li>Our Company</li>
-                        </a>
-                        <a href="#">
-                         <li>Our Company</li>
-                        </a>
-                        
-                    </ul>
+            </div>
+
+            <div class="inner-gallery">
+                <div class="gallery-image">
+                    <img src="/final-project/images/cold-coffee.jpg" alt="">
                 </div>
-             </div>
+            </div>
+
+            <div class="inner-gallery">
+                <div class="gallery-image">
+                    <img src="/final-project/images/cake.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="inner-gallery">
+                <div class="gallery-image">
+                    <img src="/final-project/images/cozy-coffee.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="inner-gallery">
+                <div class="gallery-image">
+                    <img src="/final-project/images/dessert-on-table.jpeg" alt="">
+                </div>
+            </div>
+
+            <div class="inner-gallery">
+                <div class="gallery-image">
+                    <img src="/final-project/images/coffee+latte+art.jpeg" alt="">
+                </div>
+            </div>
+
+            <div class="inner-gallery">
+                <div class="gallery-image">
+                    <img src="/final-project/images/cozy-coffee-shop-stockcake.jpg" alt="">
+                </div>
+            </div>
         </div>
-    </footer>
+    </div>
+
+
+    <section class="footer">
+
+        <div class="box-container">
+    
+            <div class="box">
+                <h3>Contact Info</h3>
+                <a href="#"> <i class="fas fa-phone"></i> +123-456-7890 </a>
+                <a href="#"> <i class="fas fa-phone"></i> +111-222-3333 </a>
+                <a href="#"> <i class="fas fa-envelope"></i> abc@gmail.com </a>
+                
+            </div>
+    
+             <div class="icons">
+                <a href="#"> <i class="fab fa-facebook-f"></i></a>
+                <a href="#"> <i class="fab fa-twitter"></i></a>
+                <a href="#"> <i class="fab fa-instagram"></i></a>
+                <a href="#"> <i class="fab fa-linkedin"></i></a>
+             </div>
+    
+        </div>
+    
+        <div>
+            <p>&copy; 2024 Your Company. All rights reserved.</p>
+        </div>
+    
+    </section>
+
+
+    
+  
+
+             
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
