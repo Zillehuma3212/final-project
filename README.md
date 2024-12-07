@@ -1,2 +1,3 @@
 # final-project
-Zille's final project of uib.
+Bean Bliss a cafe website designed by Zille.
+
