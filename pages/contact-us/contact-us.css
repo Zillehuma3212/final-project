@@ -138,9 +138,9 @@ nav{
 
 
 form { 
-       max-width:500px; 
-       margin-left: 200px;
-       margin-top: 90px;
+       max-width:700px; 
+       margin-left: 600px;
+       margin-top: 100px;
 }
 
 .feedback-input {
@@ -182,40 +182,34 @@ textarea {
   transition: all 0.3s;
   margin-top:-4px;
   font-weight:700;
+  margin-bottom: 250px;
 }
 [type="submit"]:hover { 
     background:#520505;
     color: white;
  }
 
- .hero-image img{
-    
-}
-
-
 
 /* -------- footer ------ */
 
 .footer {
-    padding: 0;
+      
     font-family: Arial, sans-serif;
     text-align: center;
     background-color: #d78128;
     color: black;
-    height: 100px;
+    
 }
 
 
 /* Credit Text */
 .footer p {
-    padding-top: 50px;
+    padding: 46px;
     font-size: 20px;
+    
+    
+    
  
-}a:-webkit-any-link {
-    color: -webkit-link;
-    cursor: pointer;
-    text-decoration: 
-underline;
 }
 
      
