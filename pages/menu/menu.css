@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Protest+Riot&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-image: url(/final-project/images/back.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center; 
+ }
+
+/* -----------header----------- */
+header{
+    display: flex;
+    align-items: center;
+    background-color: #d78128;
+    height: 130px;
+    padding: 0;
+    position: relative;
+    box-shadow: 0 8px 20px #520505;
+    z-index: 100;
+}
+.icon{
+    width: 20px;
+}
+.logo-img{
+    width: 130px;
+    margin-top: 10px;
+    margin-left:40px;
+}
+
+
+nav{
+    width: 50%;
+    height: 10vh;
+    
+}
+
+.nav-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: 750px;
+}
+.nav-container .logo img{
+    width: 150px;
+    margin-top: 10px;
+}
+.nav-container .links{
+    display: flex;
+}
+.links .link{
+    position: relative;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+
+.links .link a{
+    color: black;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 10px;
+}
+
+
+.links .link a:hover{
+    background-color: #520505; 
+    color: white;
+   border: transparent;
+   border-radius: 5px;
+}
+
+
+
+.header-buttons {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    font-size: 1.2rem; 
+    justify-content: center; 
+
+}
+
+.btn-links{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn-links a{
+    text-decoration: none;
+}
+.btn-specail {
+    background-color: black; 
+    color: white;
+    border: none; 
+    padding: 10px 20px; 
+    font-size: 16px;
+    border-radius: 5px; 
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+   
+}
+.btn-links .btn {
+    background-color: black; 
+    color: white;
+    border: none; 
+    padding: 9px 15px; 
+    font-size: 16px;
+    border-radius: 5px; 
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    
+}
+.btn-specail:hover {
+    background-color: #520505; 
+    color: white;
+    transform: translateY(-2px);
+}
+.btn-links .btn:hover{
+    background-color: #520505;
+    color: white;
+    transform: translateY(-2px);
+}
