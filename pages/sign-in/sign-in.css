@@ -134,7 +134,7 @@ nav{
     min-height: 600px;
     padding: 4% 8%;
     display: flex;
-    background-image: url(/images/back.jpg);
+    background-image: url(../../images/back.jpg);
     background-repeat: no-repeat;
     background-size: cover; 
     background-position: center; 
